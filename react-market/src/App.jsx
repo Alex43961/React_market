@@ -2,12 +2,13 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header/header.jsx';
-import Footer from './components/Footer/footer.jsx';
-import Home from './pages/Home/home.jsx';
-import About from './pages/About/about.jsx';
-import Services from './pages/Services/services.jsx';
-import Contact from './pages/Contact/contact.jsx';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Services from './pages/Services/Services';
+import Contact from './pages/Contact/Contacts';
+import NotFound from './pages/NotFound/NotFound';
 import './App.css';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
