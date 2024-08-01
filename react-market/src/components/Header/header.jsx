@@ -11,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Логотип */}
         <div className="flex items-center">
-          <img src="../../../public/favicon-32x32.png" alt="" />
+          <img className='h-3*l' src="../../../public/favicon-32x32.png" alt="" />
         </div>
         {/* Меню */}
         <nav className="hidden md:flex space-x-6">
